@@ -1,0 +1,74 @@
+## Build results
+bin/
+obj/
+out/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/
+
+## Rider
+.idea/
+*.sln.iml
+
+## ASP.NET files
+appsettings.Development.json
+
+## .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Tye
+.tye/
+
+# Dotnet CLI
+.dotnet_tool/
+
+## Logs
+*.log
+
+## Temporary files
+~$*
+*.tmp
+
+## Packages
+*.nupkg
+*.snupkg
+*.symbols.nupkg
+packages/
+# NuGet v3's project.json-based cache
+project.lock.json
+# NuGet v4+ global-packages folder
+~/.nuget/packages/
+# NuGet scratchpad
+.nuget/
+
+## OS-specific files
+.DS_Store
+Thumbs.db
+
+## ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+## Build Reports
+*.build.cs
+*.Build.cs
+
+## Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Other
+*.orig
+*.rej
+*.bak
+*.swp
