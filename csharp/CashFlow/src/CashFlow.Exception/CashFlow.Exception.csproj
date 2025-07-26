@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <CoreCompileDependsOn>PrepareResources;$(CompileDependsOn)</CoreCompileDependsOn>
+  </PropertyGroup>
+   <ItemGroup>
+    <!--
+        Here's the magic. You need to specify everything for the generated
+        designer file - the filename, the language, the namespace, and the
+        class name.
+    -->
+    <EmbeddedResource Update="ResourceErrorMessages.resx">
+      <!-- Tell Visual Studio that MSBuild will do the generation. -->
+      <Generator>ResXFileCodeGenerator</Generator>
+      <PublicClass>true</PublicClass>
+      <LastGenOutput>ResourceErrorMessages.Designer.cs</LastGenOutput>
+      <!-- Put generated files in the 'obj' folder. -->
+      <StronglyTypedFileName>$(IntermediateOutputPath)\ResourceErrorMessages.Designer.cs</StronglyTypedFileName>
+      <StronglyTypedLanguage>CSharp</StronglyTypedLanguage>
+      <StronglyTypedNamespace>CashFlow.Exception</StronglyTypedNamespace>
+      <StronglyTypedClassName>ResourceErrorMessages</StronglyTypedClassName>
+    </EmbeddedResource>
+    </ItemGroup>
+</Project>
