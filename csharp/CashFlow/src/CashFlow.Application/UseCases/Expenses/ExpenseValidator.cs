@@ -15,10 +15,4 @@ public class ExpenseValidator: AbstractValidator<RequestExpenseJson>
         RuleFor(expense => expense.Date).LessThanOrEqualTo(DateTime.UtcNow).WithMessage(ResourceErrorMessages.EXPENSE_CANNOT_FOR_THE_FUTURE);
         RuleFor(expense => expense.PaymentType).IsInEnum().WithMessage(ResourceErrorMessages.PAYMENT_TYPE_INVALID);
     }
-
-    private bool BeAValidPostcode(string postcode)
-    {
-        // custom postcode validating logic goes here
-        return false;
-    }
 }

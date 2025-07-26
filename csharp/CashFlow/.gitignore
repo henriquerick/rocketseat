@@ -40,7 +40,7 @@ project.assets.json
 *.csproj.user
 
 ## Entity Framework
-Migrations/
+## Migrations/
 
 ## DotCover
 *.dcvr
