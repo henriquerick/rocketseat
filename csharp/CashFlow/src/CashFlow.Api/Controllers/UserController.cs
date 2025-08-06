@@ -9,7 +9,7 @@ namespace CashFlow.Api.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-[Authorize]
+// [Authorize]
 public class UserController : ControllerBase
 {
     [HttpPost]
